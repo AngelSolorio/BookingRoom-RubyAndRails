@@ -36,6 +36,7 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '2.13.1'
+  gem 'capistrano'
 end
 
 group :test do
