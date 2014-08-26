@@ -36,6 +36,8 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (~> 1.3)
+    capistrano-unicorn (0.1.10)
+      capistrano
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -171,6 +173,7 @@ DEPENDENCIES
   bootstrap-datepicker-rails
   bootstrap-sass (= 3.2.0)
   capistrano
+  capistrano-unicorn
   carrierwave
   coffee-rails (~> 4.0.0)
   factory_girl_rails (= 4.2.0)

@@ -1,3 +1,4 @@
+require "bundler/capistrano"
 # config valid only for Capistrano 3.1
 lock '3.2.1'
 
@@ -37,25 +38,31 @@ set :pty, true
 
 set :user, "arturogro"
 
+# Generate an additional task to fire up the thin clusters
 namespace :deploy do
-
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-       execute :touch, release_path.join('tmp/restart.txt')
-    end
+  desc "Start the Thin processes"
+  task :start do
+    run  <<-CMD
+      cd /var/www/html/bookingroom/current; bundle exec thin start -C config/thin.yml
+    CMD
   end
 
-  after :publishing, :restart
+  desc "Stop the Thin processes"
+  task :stop do
+    run <<-CMD
+      cd /var/www/html/bookingroom/current; bundle exec thin stop -C config/thin.yml
+    CMD
+  end
 
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
-    end
+  desc "Restart the Thin processes"
+  task :restart do
+    run <<-CMD
+      cd /var/www/html/bookingroom/current; bundle exec thin restart -C config/thin.yml
+    CMD
   end
 
 end
+
+# Define all the tasks that need to be running manually after Capistrano is finished.
+after "deploy:finalize_update", "deploy:update_cv_assets"
+after "deploy", "deploy:migrate"
