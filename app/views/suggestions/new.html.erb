@@ -1,0 +1,19 @@
+<%=render 'shared/left_menu'%>
+<div id="content">
+<div class="menu-trigger"></div>
+<div class="container">
+<div class="center">
+	<h3>Create Suggestion</h3>
+	  
+    <%= form_for(@suggestion,url: suggestions_path,html: {role: "form",method: "post"}) do |f| %>
+	<div class="form-group">
+      <%= f.label :comment,"Comment" %><br>
+      <%= f.text_area :comment ,cols: "60", rows: "10"%> <br>
+
+      <%= f.submit "Create", class: "btn btn-large btn-primary" %>
+  	</div>
+    <% end %>
+
+    </div>
+</div>
+</div>

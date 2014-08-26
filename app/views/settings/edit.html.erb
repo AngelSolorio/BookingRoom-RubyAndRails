@@ -1,0 +1,38 @@
+<%=render 'shared/left_menu'%>
+<div id="content">
+<div class="menu-trigger"></div>
+<div class="container">
+<div class="center">
+	<h3>Update Administrators</h3>
+	  
+    <%= form_for(:security_user,url: settings_path,html: {role: "form",method: "put"}) do |f| %>
+	<div class="form-group">
+      <%= f.label :email,"Security Email" %>
+      <%= f.text_field :email %>
+
+      <%= f.submit "Update", class: "btn btn-large btn-primary" %>
+  </div>
+    <% end %>
+	
+    <%= form_for(:administrative_user,url: settings_path,html: {role: "form",method: "put"}) do |f| %>
+	<div class="form-group">
+
+      <%= f.label :email,"Administrative Email" %>
+      <%= f.text_field :email %>
+
+      <%= f.submit "Update", class: "btn btn-large btn-primary" %>
+	  </div>
+	  
+    <% end %>
+	
+    <%= form_for(:parking_user,url: settings_path,html: {role: "form",method: "put"}) do |f| %>
+	<div class="form-group">
+
+      <%= f.label :email,"Parking Email" %>
+      <%= f.text_field :email %>
+
+      <%= f.submit "Update", class: "btn btn-large btn-primary" %>
+    <% end %>
+    </div>
+</div>
+</div></div>

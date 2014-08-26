@@ -1,0 +1,45 @@
+
+<%=render 'shared/left_menu'%>
+<div id="content">
+<div class="menu-trigger"></div>
+	<h1> Create a new Meeting Room</h1>
+	<%= form_for @meeting_room, remote: true, html: { multipart: true, role: "form", id: "my-awesome-dropzone", class: 	"dropzone", 	format: 'html',method: "POST"} 	do |f| %>
+	<div class="dropzone dropzone-previews" id="iDrop">
+	    <div class="dz-message">
+	        <h3 >Drop files to upload or click</h3>
+	    </div>
+	</div>
+	
+   	<div class="field">
+    	<%= f.label :name %><br>
+     	<%= f.text_field :name,class: "input-xxlarge" %><br><br>
+   </div>
+   
+   <div class="field">
+      <%= f.label :location %><br>
+	  <%= f.text_field :location,class: "input-xxlarge" %><br><br>
+   </div>
+   
+   <div class="field">
+      <%= f.label :capacity %><br>
+	  <%= f.select :capacity, ((1..10).map {|i| [i,i] }) %><br><br>
+   </div>
+   
+   <div class="field">
+   	  <%= f.label :services %><br>
+	  <%for service in @services%>
+	  <%=check_box_tag "meeting_room[service_ids][]",service.id%>
+	  <%=service.name%> <br>
+	  <%end%>
+	  <br>
+   </div>
+	
+   <div class="actions">
+     <%= f.submit " Create", class: "btn btn-large btn-primary" %>
+   </div>
+<% end %>
+</div>
+<%=javascript_include_tag 'upload.js'%>
+
+<!-- The XDomainRequest Transport is included for cross-domain file deletion for IE8+ -->
+<!--[if gte IE 8]><script src="/javascripts/jquery-file-upload/js/cors/jquery.xdr-transport.js"></script><![endif]-->

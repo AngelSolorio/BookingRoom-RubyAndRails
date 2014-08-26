@@ -1,0 +1,49 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+	  var monthNames = [ "January", "February", "March", "April", "May", "June",
+	      "July", "August", "September", "October", "November", "December" ];
+	  var today = new Date();
+	  $("#current-date").val(monthNames[today.getMonth()] + "-" + today.getFullYear());
+	  
+	  var day = today.getDate();
+	  var month = today.getMonth()+1; //January is 0!
+	  var year = today.getFullYear();
+    $('[data-behaviour~=datepicker]').datepicker({
+		defaultDate: today,
+		format: "MM-yyyy",
+		viewMode: "months", 
+		minViewMode: "months",
+		todayBtn: true,
+	});
+	
+  })
+</script>
+<%=render 'shared/left_menu'%>
+<div id="content">
+<div class="menu-trigger"></div>
+<div class="container">
+<div class="center">
+<h1>Mis Reservaciones</h1><br>
+<input type="text" Date data-behaviour='datepicker' id= "current-date"><br><br><br>
+<!-- Columns are always 50% wide, on mobile and desktop -->
+<div class="row">
+  <div class="col-xs-6">
+	  <h3>All</h3>
+	<ul class = "services">
+		<% @my_bookings.each do |booking| %>
+		<li>
+			<p><%= link_to booking.title, booking %></p>
+			<p><%= stylized_date(booking.start_date) %></p>
+			<p><%= stylized_timeframe(booking.start_date,booking.end_date)%></p>
+		</li>
+		<%end%>
+	</ul> <br>
+  </div>
+  <div class="col-xs-6">
+	  <h3>Details</h3>
+  </div>
+</div>
+
+</div>
+</div>
+</div>

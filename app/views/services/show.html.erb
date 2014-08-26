@@ -1,0 +1,7 @@
+<div class="container">
+	<h3><%= @service.name%></h3>
+	<%= image_tag @service.photo_file.url %>
+	<div>
+		<%= link_to "Show all services", services_path, method: :get %>
+	</div>
+</div>

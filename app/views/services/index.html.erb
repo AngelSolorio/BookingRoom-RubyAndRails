@@ -1,0 +1,18 @@
+<% provide(:title, 'All services') %>
+<div class="container">
+	<h3>All Services</h3>
+	<ul class = "services">
+		<% @services.each do |service| %>
+		<li>
+			<%= image_tag service.photo_file.url %>
+			<%= link_to service.name, service %>
+		        | <%= link_to "edit", edit_service_path(service), method: :get %>
+				| <%= link_to "delete", service, method: :delete,
+							  			           data: { confirm: "You sure?" } %>
+		</li>
+		<%end%>
+	</ul> <br>
+	<div>
+		<%= link_to "Add a new service", new_service_path, method: :get %>
+	</div>
+</div>

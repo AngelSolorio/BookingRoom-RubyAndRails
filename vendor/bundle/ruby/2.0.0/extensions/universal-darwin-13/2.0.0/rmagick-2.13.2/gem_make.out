@@ -1,0 +1,727 @@
+/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby -r ./siteconf20140729-30145-zt7pug.rb extconf.rb 
+checking for Ruby version >= 1.8.5... yes
+checking for xcrun... yes
+checking for Magick-config... yes
+checking for ImageMagick version >= 6.4.9... yes
+checking for HDRI disabled version of ImageMagick... yes
+checking for stdint.h... yes
+checking for sys/types.h... yes
+checking for wand/MagickWand.h... yes
+checking for snprintf() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AcquireImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for AffinityImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for AffinityImages() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for AutoGammaImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for AutoLevelImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for BlueShiftImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for ConstituteComponentTerminus() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for DeskewImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for EncipherImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for EqualizeImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for FloodfillPaintImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for FunctionImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for GetAuthenticIndexQueue() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for GetAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for GetImageAlphaChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for GetVirtualPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for LevelImageColors() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for LevelColorsImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for LevelizeImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for LiquidRescaleImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for MagickLibAddendum() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for OpaquePaintImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for QueueAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for RemapImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for RemoveImageArtifact() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for SelectiveBlurImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for SetImageAlphaChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for SetImageArtifact() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for SetMagickMemoryMethods() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for SparseColorImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for SyncAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for TransformImageColorspace() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for TransparentPaintImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for TransparentPaintImageChroma() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... no
+checking for QueryMagickColorname() new signature... yes
+checking for Image.type in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.kerning in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.interline_spacing in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.interword_spacing in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DitherMethod in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for MagickFunction in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for ImageLayerMethod in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for long double in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AlphaChannelType.CopyAlphaChannel... yes
+checking for AlphaChannelType.BackgroundAlphaChannel... yes
+checking for CompositeOperator.BlurCompositeOp... yes
+checking for CompositeOperator.DistortCompositeOp... yes
+checking for CompositeOperator.LinearBurnCompositeOp... yes
+checking for CompositeOperator.LinearDodgeCompositeOp... yes
+checking for CompositeOperator.MathematicsCompositeOp... yes
+checking for CompositeOperator.PegtopLightCompositeOp... yes
+checking for CompositeOperator.PinLightCompositeOp... yes
+checking for CompositeOperator.VividLightCompositeOp... yes
+checking for CompressionType.DXT1Compression... yes
+checking for CompressionType.DXT3Compression... yes
+checking for CompressionType.DXT5Compression... yes
+checking for CompressionType.ZipSCompression... yes
+checking for CompressionType.PizCompression... yes
+checking for CompressionType.Pxr24Compression... yes
+checking for CompressionType.B44Compression... yes
+checking for CompressionType.B44ACompression... yes
+checking for DistortImageMethod.BarrelDistortion... yes
+checking for DistortImageMethod.BarrelInverseDistortion... yes
+checking for DistortImageMethod.BilinearForwardDistortion... yes
+checking for DistortImageMethod.BilinearReverseDistortion... yes
+checking for DistortImageMethod.DePolarDistortion... yes
+checking for DistortImageMethod.PolarDistortion... yes
+checking for DistortImageMethod.PolynomialDistortion... yes
+checking for DistortImageMethod.ShepardsDistortion... yes
+checking for DitherMethod.NoDitherMethod... yes
+checking for FilterTypes.KaiserFilter... yes
+checking for FilterTypes.WelshFilter... yes
+checking for FilterTypes.ParzenFilter... yes
+checking for FilterTypes.LagrangeFilter... yes
+checking for FilterTypes.BohmanFilter... yes
+checking for FilterTypes.BartlettFilter... yes
+checking for FilterTypes.SentinelFilter... yes
+checking for MagickEvaluateOperator.PowEvaluateOperator... yes
+checking for MagickEvaluateOperator.LogEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdBlackEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdWhiteEvaluateOperator... yes
+checking for MagickEvaluateOperator.GaussianNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.ImpulseNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.LaplacianNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.MultiplicativeNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.PoissonNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.UniformNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.CosineEvaluateOperator... yes
+checking for MagickEvaluateOperator.SineEvaluateOperator... yes
+checking for MagickEvaluateOperator.AddModulusEvaluateOperator... yes
+checking for MagickFunction.ArcsinFunction... yes
+checking for MagickFunction.ArctanFunction... yes
+checking for MagickFunction.PolynomialFunction... yes
+checking for MagickFunction.SinusoidFunction... yes
+checking for ImageLayerMethod.FlattenLayer... yes
+checking for ImageLayerMethod.MergeLayer... yes
+checking for ImageLayerMethod.MosaicLayer... yes
+checking for ImageLayerMethod.TrimBoundsLayer... yes
+checking for VirtualPixelMethod.HorizontalTileVirtualPixelMethod... yes
+checking for VirtualPixelMethod.VerticalTileVirtualPixelMethod... yes
+checking for VirtualPixelMethod.HorizontalTileEdgeVirtualPixelMethod... yes
+checking for VirtualPixelMethod.VerticalTileEdgeVirtualPixelMethod... yes
+checking for VirtualPixelMethod.CheckerTileVirtualPixelMethod... yes
+checking for ruby/io.h... yes
+checking for rb_frame_this_func() in ruby.h,ruby/io.h... yes
+creating extconf.h
+creating Makefile
+
+
+======================================================================
+Tue 29Jul14 18:57:53
+This installation of RMagick 2.13.2 is configured for
+Ruby 2.0.0 (universal.x86_64-darwin13) and ImageMagick 6.8.9 Q16 
+======================================================================
+
+
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling rmagick.c
+compiling rmdraw.c
+rmdraw.c:315:15: warning: comparison of constant 100 with expression of type 'WeightType' is always true [-Wtautological-constant-out-of-range-compare]
+        if (w < 100 || w > 900)
+            ~ ^ ~~~
+rmdraw.c:315:26: warning: comparison of constant 900 with expression of type 'WeightType' is always false [-Wtautological-constant-out-of-range-compare]
+        if (w < 100 || w > 900)
+                       ~ ^ ~~~
+rmdraw.c:1878:17: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+        image = AcquireImage(info);
+                ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+3 warnings generated.
+rmdraw.c:315:15: warning: comparison of constant 100 with expression of type 'WeightType' is always true [-Wtautological-constant-out-of-range-compare]
+        if (w < 100 || w > 900)
+            ~ ^ ~~~
+rmdraw.c:315:26: warning: comparison of constant 900 with expression of type 'WeightType' is always false [-Wtautological-constant-out-of-range-compare]
+        if (w < 100 || w > 900)
+                       ~ ^ ~~~
+rmdraw.c:1878:17: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+        image = AcquireImage(info);
+                ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+3 warnings generated.
+compiling rmenum.c
+rmenum.c:450:13: warning: 4 enumeration values not handled in switch: 'DivideSrcCompositeOp', 'MinusSrcCompositeOp', 'DarkenIntensityCompositeOp'... [-Wswitch]
+    switch (op)
+            ^
+rmenum.c:565:13: warning: enumeration values 'LZMACompression', 'JBIG1Compression', and 'JBIG2Compression' not handled in switch [-Wswitch]
+    switch (ct)
+            ^
+rmenum.c:674:12: warning: 9 enumeration values not handled in switch: 'SincFastFilter', 'LanczosSharpFilter', 'Lanczos2Filter'... [-Wswitch]
+    switch(type)
+           ^
+rmenum.c:922:12: warning: 5 enumeration values not handled in switch: 'Average9InterpolatePixel', 'Average16InterpolatePixel', 'BlendInterpolatePixel'... [-Wswitch]
+    switch(interpolate)
+           ^
+4 warnings generated.
+rmenum.c:450:13: warning: 4 enumeration values not handled in switch: 'DivideSrcCompositeOp', 'MinusSrcCompositeOp', 'DarkenIntensityCompositeOp'... [-Wswitch]
+    switch (op)
+            ^
+rmenum.c:565:13: warning: enumeration values 'LZMACompression', 'JBIG1Compression', and 'JBIG2Compression' not handled in switch [-Wswitch]
+    switch (ct)
+            ^
+rmenum.c:674:12: warning: 9 enumeration values not handled in switch: 'SincFastFilter', 'LanczosSharpFilter', 'Lanczos2Filter'... [-Wswitch]
+    switch(type)
+           ^
+rmenum.c:922:12: warning: 5 enumeration values not handled in switch: 'Average9InterpolatePixel', 'Average16InterpolatePixel', 'BlendInterpolatePixel'... [-Wswitch]
+    switch(interpolate)
+           ^
+4 warnings generated.
+compiling rmfill.c
+rmfill.c:143:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        row_pixels = SetImagePixels(image, 0, (long int)y, image->columns, 1);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:159:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmfill.c:233:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        row_pixels = SetImagePixels(image, 0, (long int)y, image->columns, 1);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:243:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmfill.c:315:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        col_pixels = SetImagePixels(image, (long int)x, 0, 1, image->rows);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:324:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmfill.c:414:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        row_pixels = SetImagePixels(image, 0, (long int)y, image->columns, 1);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:430:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmfill.c:521:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        row_pixels = SetImagePixels(image, 0, (long int)y, image->columns, 1);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:537:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+10 warnings generated.
+rmfill.c:143:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        row_pixels = SetImagePixels(image, 0, (long int)y, image->columns, 1);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:159:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmfill.c:233:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        row_pixels = SetImagePixels(image, 0, (long int)y, image->columns, 1);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:243:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmfill.c:315:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        col_pixels = SetImagePixels(image, (long int)x, 0, 1, image->rows);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:324:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmfill.c:414:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        row_pixels = SetImagePixels(image, 0, (long int)y, image->columns, 1);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:430:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmfill.c:521:22: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        row_pixels = SetImagePixels(image, 0, (long int)y, image->columns, 1);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmfill.c:537:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(image);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+10 warnings generated.
+compiling rmilist.c
+rmilist.c:448:12: warning: 'MapImages' is deprecated [-Wdeprecated-declarations]
+    (void) MapImages(new_images, map, dither);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:212:3: note: 'MapImages' declared here
+  MapImages(Image *,const Image *,const MagickBooleanType)
+  ^
+rmilist.c:666:20: warning: 'MapImages' is deprecated [-Wdeprecated-declarations]
+            (void) MapImages(new_images, NULL, 0);
+                   ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:212:3: note: 'MapImages' declared here
+  MapImages(Image *,const Image *,const MagickBooleanType)
+  ^
+2 warnings generated.
+rmilist.c:448:12: warning: 'MapImages' is deprecated [-Wdeprecated-declarations]
+    (void) MapImages(new_images, map, dither);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:212:3: note: 'MapImages' declared here
+  MapImages(Image *,const Image *,const MagickBooleanType)
+  ^
+rmilist.c:666:20: warning: 'MapImages' is deprecated [-Wdeprecated-declarations]
+            (void) MapImages(new_images, NULL, 0);
+                   ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:212:3: note: 'MapImages' declared here
+  MapImages(Image *,const Image *,const MagickBooleanType)
+  ^
+2 warnings generated.
+compiling rmimage.c
+rmimage.c:2784:12: warning: 'ColorFloodfillImage' is deprecated [-Wdeprecated-declarations]
+    (void) ColorFloodfillImage(new_image, draw_info, target, x, y, (PaintMethod)fill_method);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:183:3: note: 'ColorFloodfillImage' declared here
+  ColorFloodfillImage(Image *,const DrawInfo *,const PixelPacket,const ssize_t,
+  ^
+rmimage.c:3680:12: warning: 'SetImageAttribute' is deprecated [-Wdeprecated-declarations]
+    (void) SetImageAttribute(comp_image, "[modify-outside-overlay]", "false");
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:229:3: note: 'SetImageAttribute' declared here
+  SetImageAttribute(Image *,const char *,const char *)
+  ^
+rmimage.c:3919:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(NULL);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+rmimage.c:6991:14: warning: 'AcquireImagePixels' is deprecated [-Wdeprecated-declarations]
+    pixels = AcquireImagePixels(image, x, y, columns, rows, &exception);
+             ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:120:4: note: 'AcquireImagePixels' declared here
+  *AcquireImagePixels(const Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:8159:12: warning: 'MapImage' is deprecated [-Wdeprecated-declarations]
+    (void) MapImage(new_image, map, dither);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:210:3: note: 'MapImage' declared here
+  MapImage(Image *,const Image *,const MagickBooleanType)
+  ^
+rmimage.c:8386:17: warning: 'GetImagePixels' is deprecated [-Wdeprecated-declarations]
+            q = GetImagePixels(clip_mask, 0, y, clip_mask->columns, 1);
+                ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:264:4: note: 'GetImagePixels' declared here
+  *GetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:8409:13: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+            SyncImagePixels(clip_mask);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmimage.c:8609:12: warning: 'MatteFloodfillImage' is deprecated [-Wdeprecated-declarations]
+    (void) MatteFloodfillImage(new_image, target, op, x, y, method);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:214:3: note: 'MatteFloodfillImage' declared here
+  MatteFloodfillImage(Image *,const PixelPacket,const Quantum,const ssize_t,
+  ^
+rmimage.c:9115:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(info);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+rmimage.c:9370:13: warning: 'PaintOpaqueImageChannel' is deprecated [-Wdeprecated-declarations]
+    okay =  PaintOpaqueImageChannel(new_image, DefaultChannels, &target_pp, &fill_pp);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:223:3: note: 'PaintOpaqueImageChannel' declared here
+  PaintOpaqueImageChannel(Image *,const ChannelType,const MagickPixelPacket *,
+  ^
+rmimage.c:9808:22: warning: 'AcquireImagePixels' is deprecated [-Wdeprecated-declarations]
+        old_color = *AcquireImagePixels(image, x, y, 1, 1, &exception);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:120:4: note: 'AcquireImagePixels' declared here
+  *AcquireImagePixels(const Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:9820:36: warning: 'GetIndexes' is deprecated [-Wdeprecated-declarations]
+            IndexPacket *indexes = GetIndexes(image);
+                                   ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:159:4: note: 'GetIndexes' declared here
+  *GetIndexes(const Image *) magick_attribute((deprecated)),
+   ^
+rmimage.c:9859:13: warning: 'GetImagePixels' is deprecated [-Wdeprecated-declarations]
+    pixel = GetImagePixels(image, x, y, 1, 1);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:264:4: note: 'GetImagePixels' declared here
+  *GetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:9877:5: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+    SyncImagePixels(image);
+    ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmimage.c:10397:17: warning: 'RadialBlurImage' is deprecated [-Wdeprecated-declarations]
+    new_image = RadialBlurImage(image, NUM2DBL(angle), &exception);
+                ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:144:4: note: 'RadialBlurImage' declared here
+  *RadialBlurImage(const Image *,const double,ExceptionInfo *)
+   ^
+rmimage.c:10447:17: warning: 'RadialBlurImageChannel' is deprecated [-Wdeprecated-declarations]
+    new_image = RadialBlurImageChannel(image, channels, NUM2DBL(argv[0]), &exception);
+                ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:146:4: note: 'RadialBlurImageChannel' declared here
+  *RadialBlurImageChannel(const Image *,const ChannelType,const double,
+   ^
+rmimage.c:10705:17: warning: 'RecolorImage' is deprecated [-Wdeprecated-declarations]
+    new_image = RecolorImage(image, order, matrix, &exception);
+                ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:148:4: note: 'RecolorImage' declared here
+  *RecolorImage(const Image *,const size_t,const double *,ExceptionInfo *)
+   ^
+rmimage.c:12726:18: warning: 'GetImagePixels' is deprecated [-Wdeprecated-declarations]
+        pixels = GetImagePixels(image, x, y, cols, rows);
+                 ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:264:4: note: 'GetImagePixels' declared here
+  *GetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:12742:13: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+            SyncImagePixels(image);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmimage.c:12916:12: warning: 'ColorFloodfillImage' is deprecated [-Wdeprecated-declarations]
+    (void) ColorFloodfillImage(new_image, draw_info, color, x, y, method);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:183:3: note: 'ColorFloodfillImage' declared here
+  ColorFloodfillImage(Image *,const DrawInfo *,const PixelPacket,const ssize_t,
+  ^
+rmimage.c:13474:12: warning: 'PaintTransparentImage' is deprecated [-Wdeprecated-declarations]
+    okay = PaintTransparentImage(new_image, &color, opacity);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:225:3: note: 'PaintTransparentImage' declared here
+  PaintTransparentImage(Image *,const MagickPixelPacket *,const Quantum)
+  ^
+rmimage.c:14503:13: warning: 'AcquireImagePixels' is deprecated [-Wdeprecated-declarations]
+        p = AcquireImagePixels(reflection, 0, y, image->columns, 1, &exception);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:120:4: note: 'AcquireImagePixels' declared here
+  *AcquireImagePixels(const Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:14515:13: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        q = SetImagePixels(reflection, 0, y, image->columns, 1);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:14536:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(reflection);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+24 warnings generated.
+rmimage.c:2784:12: warning: 'ColorFloodfillImage' is deprecated [-Wdeprecated-declarations]
+    (void) ColorFloodfillImage(new_image, draw_info, target, x, y, (PaintMethod)fill_method);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:183:3: note: 'ColorFloodfillImage' declared here
+  ColorFloodfillImage(Image *,const DrawInfo *,const PixelPacket,const ssize_t,
+  ^
+rmimage.c:3680:12: warning: 'SetImageAttribute' is deprecated [-Wdeprecated-declarations]
+    (void) SetImageAttribute(comp_image, "[modify-outside-overlay]", "false");
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:229:3: note: 'SetImageAttribute' declared here
+  SetImageAttribute(Image *,const char *,const char *)
+  ^
+rmimage.c:3919:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(NULL);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+rmimage.c:6991:14: warning: 'AcquireImagePixels' is deprecated [-Wdeprecated-declarations]
+    pixels = AcquireImagePixels(image, x, y, columns, rows, &exception);
+             ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:120:4: note: 'AcquireImagePixels' declared here
+  *AcquireImagePixels(const Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:8159:12: warning: 'MapImage' is deprecated [-Wdeprecated-declarations]
+    (void) MapImage(new_image, map, dither);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:210:3: note: 'MapImage' declared here
+  MapImage(Image *,const Image *,const MagickBooleanType)
+  ^
+rmimage.c:8386:17: warning: 'GetImagePixels' is deprecated [-Wdeprecated-declarations]
+            q = GetImagePixels(clip_mask, 0, y, clip_mask->columns, 1);
+                ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:264:4: note: 'GetImagePixels' declared here
+  *GetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:8409:13: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+            SyncImagePixels(clip_mask);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmimage.c:8609:12: warning: 'MatteFloodfillImage' is deprecated [-Wdeprecated-declarations]
+    (void) MatteFloodfillImage(new_image, target, op, x, y, method);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:214:3: note: 'MatteFloodfillImage' declared here
+  MatteFloodfillImage(Image *,const PixelPacket,const Quantum,const ssize_t,
+  ^
+rmimage.c:9115:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(info);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+rmimage.c:9370:13: warning: 'PaintOpaqueImageChannel' is deprecated [-Wdeprecated-declarations]
+    okay =  PaintOpaqueImageChannel(new_image, DefaultChannels, &target_pp, &fill_pp);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:223:3: note: 'PaintOpaqueImageChannel' declared here
+  PaintOpaqueImageChannel(Image *,const ChannelType,const MagickPixelPacket *,
+  ^
+rmimage.c:9808:22: warning: 'AcquireImagePixels' is deprecated [-Wdeprecated-declarations]
+        old_color = *AcquireImagePixels(image, x, y, 1, 1, &exception);
+                     ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:120:4: note: 'AcquireImagePixels' declared here
+  *AcquireImagePixels(const Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:9820:36: warning: 'GetIndexes' is deprecated [-Wdeprecated-declarations]
+            IndexPacket *indexes = GetIndexes(image);
+                                   ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:159:4: note: 'GetIndexes' declared here
+  *GetIndexes(const Image *) magick_attribute((deprecated)),
+   ^
+rmimage.c:9859:13: warning: 'GetImagePixels' is deprecated [-Wdeprecated-declarations]
+    pixel = GetImagePixels(image, x, y, 1, 1);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:264:4: note: 'GetImagePixels' declared here
+  *GetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:9877:5: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+    SyncImagePixels(image);
+    ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmimage.c:10397:17: warning: 'RadialBlurImage' is deprecated [-Wdeprecated-declarations]
+    new_image = RadialBlurImage(image, NUM2DBL(angle), &exception);
+                ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:144:4: note: 'RadialBlurImage' declared here
+  *RadialBlurImage(const Image *,const double,ExceptionInfo *)
+   ^
+rmimage.c:10447:17: warning: 'RadialBlurImageChannel' is deprecated [-Wdeprecated-declarations]
+    new_image = RadialBlurImageChannel(image, channels, NUM2DBL(argv[0]), &exception);
+                ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:146:4: note: 'RadialBlurImageChannel' declared here
+  *RadialBlurImageChannel(const Image *,const ChannelType,const double,
+   ^
+rmimage.c:10705:17: warning: 'RecolorImage' is deprecated [-Wdeprecated-declarations]
+    new_image = RecolorImage(image, order, matrix, &exception);
+                ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:148:4: note: 'RecolorImage' declared here
+  *RecolorImage(const Image *,const size_t,const double *,ExceptionInfo *)
+   ^
+rmimage.c:12726:18: warning: 'GetImagePixels' is deprecated [-Wdeprecated-declarations]
+        pixels = GetImagePixels(image, x, y, cols, rows);
+                 ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:264:4: note: 'GetImagePixels' declared here
+  *GetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:12742:13: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+            SyncImagePixels(image);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+rmimage.c:12916:12: warning: 'ColorFloodfillImage' is deprecated [-Wdeprecated-declarations]
+    (void) ColorFloodfillImage(new_image, draw_info, color, x, y, method);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:183:3: note: 'ColorFloodfillImage' declared here
+  ColorFloodfillImage(Image *,const DrawInfo *,const PixelPacket,const ssize_t,
+  ^
+rmimage.c:13474:12: warning: 'PaintTransparentImage' is deprecated [-Wdeprecated-declarations]
+    okay = PaintTransparentImage(new_image, &color, opacity);
+           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:225:3: note: 'PaintTransparentImage' declared here
+  PaintTransparentImage(Image *,const MagickPixelPacket *,const Quantum)
+  ^
+rmimage.c:14503:13: warning: 'AcquireImagePixels' is deprecated [-Wdeprecated-declarations]
+        p = AcquireImagePixels(reflection, 0, y, image->columns, 1, &exception);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:120:4: note: 'AcquireImagePixels' declared here
+  *AcquireImagePixels(const Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:14515:13: warning: 'SetImagePixels' is deprecated [-Wdeprecated-declarations]
+        q = SetImagePixels(reflection, 0, y, image->columns, 1);
+            ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:271:4: note: 'SetImagePixels' declared here
+  *SetImagePixels(Image *,const ssize_t,const ssize_t,const size_t,
+   ^
+rmimage.c:14536:9: warning: 'SyncImagePixels' is deprecated [-Wdeprecated-declarations]
+        SyncImagePixels(reflection);
+        ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:232:3: note: 'SyncImagePixels' declared here
+  SyncImagePixels(Image *) magick_attribute((deprecated)),
+  ^
+24 warnings generated.
+compiling rminfo.c
+compiling rmmain.c
+compiling rmmontage.c
+compiling rmpixel.c
+rmpixel.c:406:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(info);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+rmpixel.c:1023:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(info);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+2 warnings generated.
+rmpixel.c:406:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(info);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+rmpixel.c:1023:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(info);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+2 warnings generated.
+compiling rmstruct.c
+compiling rmutil.c
+rmutil.c:668:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(info);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+rmutil.c:1612:43: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    rb_raise(Class_FatalImageMagickError, GetLocaleExceptionMessage(severity, reason));
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rmutil.c:1652:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        rb_warning(msg);
+                   ^~~
+3 warnings generated.
+rmutil.c:668:13: warning: 'AllocateImage' is deprecated [-Wdeprecated-declarations]
+    image = AcquireImage(info);
+            ^
+./rmagick.h:176:28: note: expanded from macro 'AcquireImage'
+#define AcquireImage(info) AllocateImage(info)
+                           ^
+/usr/local/Cellar/imagemagick/6.8.9-1/include/ImageMagick-6/magick/deprecate.h:127:4: note: 'AllocateImage' declared here
+  *AllocateImage(const ImageInfo *) magick_attribute((deprecated)),
+   ^
+rmutil.c:1612:43: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+    rb_raise(Class_FatalImageMagickError, GetLocaleExceptionMessage(severity, reason));
+                                          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rmutil.c:1652:20: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+        rb_warning(msg);
+                   ^~~
+3 warnings generated.
+linking shared-object RMagick2.bundle
+ld: warning: ignoring file /usr/local/Cellar/imagemagick/6.8.9-1/lib/libMagickCore-6.Q16.dylib, file was built for x86_64 which is not the architecture being linked (i386): /usr/local/Cellar/imagemagick/6.8.9-1/lib/libMagickCore-6.Q16.dylib
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 RMagick2.bundle ./.gem.20140729-30145-1r23aim
+installing default RMagick2 libraries

@@ -1,0 +1,53 @@
+
+<%=render 'shared/left_menu'%>
+<div id="content">
+<div class="menu-trigger"></div>
+	<div class="center">
+		<h1>Book a Meeting Room</h1><br>
+		<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+				<div class="list-container">
+					<div class="list">
+					<div class="item">
+  					<div class="col-xs-6 col-md-4">
+  						<h3>Meeting Rooms</h3>
+						<%= form_for @booking, url: bookings_path, html: { role: "form", method: "post" } do |f| %>
+							<ul class = "meeting_rooms">
+							<%for meeting_room in @meeting_rooms%>
+							<li>
+								<div class="meeting-room-link">
+									<strong><%= link_to meeting_room.name, meeting_room ,class: 'left-pad'%></strong><br>
+								</div>
+								<div class="right-pad">
+									<%= radio_button_tag "booking[meeting_room_id]",meeting_room.id%>
+		        					<%= f.label :location, 'Location: ' + meeting_room.location%></div>
+									<%= f.label :capacity, 'Capacity: ' + meeting_room.capacity.to_s, class: 'left-pad' %>
+							</li>
+							<%end%>
+							</ul> <br>
+						<%end%><br>
+						<%=link_to "Confirm Reservation", '#confirm-booking',id: "start-booking", class: 'btn btn-primary btn-lg'%>
+  		  			</div>
+  			  		<div id="services-list" class="col-xs-12 col-md-8">
+  						<h3>Details</h3>
+						<!-- 2. Add images to <div class="fotorama"></div>. -->
+						<div id="gallery" data-auto="false" >
+					    	<%= image_tag 'dafault.png' %>
+						</div>
+						<h3>Services</h3>
+						<p id="default-meeting-description">Displays the services availabe for each meeting room</p>
+						<ul id="services-preview"></ul>
+  					</div>
+				</div>
+				<div class="item">
+  					<div class="col-xs-6 col-md-4">
+						<%=link_to "Go Back", '#start-booking', class: 'btn btn-primary btn-lg'%>
+					</div>
+  					<div class="col-xs-6 col-md-4">
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+
+<%=javascript_include_tag 'preview.js'%>
+

@@ -1,0 +1,19 @@
+
+<div class="container">
+<h3> Add a new Service</h3>
+	<%= form_for @service, url: services_path, html: { multipart: true, role:"form", method:"post" } do |f| %>
+   	<div class="field">
+    	<%= f.label :name %><br>
+     	<%= f.text_field :name, class: "input-xxlarge" %><br><br>
+   </div>
+ 
+ 	<div class="field" >
+	<%= file_field :photo_file, multiple: true %><br>
+	</div> 
+	
+   	<div class="actions">
+    <%= f.submit " Create", class: "btn btn-large btn-primary" %>
+   	</div>
+	<% end %>
+
+</div>

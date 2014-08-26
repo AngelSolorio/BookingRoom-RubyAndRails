@@ -1,0 +1,12 @@
+<!-- Navigation -->
+<nav id="slide-menu">
+	<ul>
+		<li class="timeline"><%=link_to "Home",root_path%></li>
+		<li class="events"><%=link_to "My Reservations",bookings_path%></li>
+		<li class="calendar"><%=link_to "Meeting Rooms",new_meeting_room_path%></li>
+		<li class="calendar"><%=link_to "Book a Meeting Room",new_booking_path%></li>
+		<li class="sep settings"><%=link_to "Suggestions",new_suggestion_path%></li>
+		<li class="events"><%=link_to "Settings",edit_settings_path%></li>
+		<li class="logout"><%= link_to "Logout", signout_path, method: "delete" %></li>
+	</ul>
+</nav>

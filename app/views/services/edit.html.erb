@@ -1,0 +1,21 @@
+<div class="container">
+<h3> Add a new Service</h3>
+	<%= form_for @service do |f| %>
+   	<div class="field">
+    	<%= f.label :name %><br>
+     	<%= f.text_field :name, class: "input-xxlarge" %><br><br>
+   </div>
+ 
+ 	<div class="field" >
+	<%= image_tag @service.photo_file_url(:small).to_s %>
+	<span class="btn success fileinput-button">
+	<span><%= t('photos.add_files') %>...</span>
+	<%= f.file_field :photo_file, class: "btn btn-default"%><br>
+	</span>
+	</div>
+	
+   	<div class="actions">
+    <%= f.submit "Update", class: "btn btn-large btn-primary" %>
+   	</div>
+	<% end %>
+</div>
