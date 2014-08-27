@@ -1,4 +1,4 @@
-require "bundler/capistrano"
+
 # config valid only for Capistrano 3.1
 lock '3.2.1'
 
@@ -38,31 +38,31 @@ set :pty, true
 
 set :user, "arturogro"
 
-# Generate an additional task to fire up the thin clusters
 namespace :deploy do
-  desc "Start the Thin processes"
-  task :start do
-    run  <<-CMD
-      cd /var/www/html/bookingroom/current; bundle exec thin start -C config/thin.yml
-    CMD
-  end
 
-  desc "Stop the Thin processes"
-  task :stop do
-    run <<-CMD
-      cd /var/www/html/bookingroom/current; bundle exec thin stop -C config/thin.yml
-    CMD
-  end
-
-  desc "Restart the Thin processes"
+  desc 'Restart application'
   task :restart do
-    run <<-CMD
-      cd /var/www/html/bookingroom/current; bundle exec thin restart -C config/thin.yml
-    CMD
+    on roles(:app), in: :sequence, wait: 5 do
+      # Your restart mechanism here, for example:
+       execute :mkdir, '-p', "#{ release_path }/tmp"
+       execute :touch, release_path.join('tmp/restart.txt')
+    end
+  end
+
+  after :publishing, :restart
+  
+
+  after :restart, :clear_cache do
+    on roles(:web), in: :groups, limit: 3, wait: 10 do
+      # Here we can do anything such as:
+      # within release_path do
+      #   execute :rake, 'cache:clear'
+      # end
+    end
   end
 
 end
 
-# Define all the tasks that need to be running manually after Capistrano is finished.
-after "deploy:finalize_update", "deploy:update_cv_assets"
-after "deploy", "deploy:migrate"
+after 'deploy:restart', 'unicorn:reload'    # app IS NOT preloaded
+after 'deploy:restart', 'unicorn:restart'   # app preloaded
+after 'deploy:restart', 'unicorn:duplicate' # before_fork hook implemented (zero downtime deployments)
