@@ -10,7 +10,7 @@ gem 'net-ldap'
 gem 'carrierwave'
 gem 'jquery-turbolinks'
 gem 'fullcalendar-rails'
-gem "rmagick", "~> 2.13.1",require: false
+gem "rmagick", "~> 2.13.1"#,require: false
 gem 'houston'
 gem 'bootstrap-datepicker-rails'
 gem "fotoramajs"
@@ -38,6 +38,7 @@ group :development, :test do
   gem 'rspec-rails', '2.13.1'
   gem 'capistrano'
   gem 'capistrano3-unicorn'
+  gem 'capistrano-bundler'
 end
 
 group :test do
